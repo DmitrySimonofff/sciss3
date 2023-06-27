@@ -62,14 +62,14 @@ const Choice = () => {
     <div>
       <div className="d-flex m-auto sel-buts-wr">
         <div class="sel-but-wr">
-        {select == 0 ? (
-              <button class="sel-but btn-success">
+        <button 
+            {select == 0 ? (
+                class="sel-but btn-success"
             ) : (
-              <button
                 onClick={() => setSelect(0)}
-                class="sel-but"
-              >                
-            )}  
+                class="sel-but"                
+            )} 
+        >    
 <svg width="248" height="248" viewBox="0 0 248 248" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M123 0H45.5L9 44.5V247.5H123H134H206L248 213.5V11.5L238.5 0H134H123Z" class="sel-but-1" fill="#148062"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M114 0H36.5L0 44.5V247.5H114H125H207L239 220.5V0H125H114Z" class="sel-but-2" fill="#00CD94"/>
@@ -88,16 +88,15 @@ const Choice = () => {
 <div class="sel-tt">Rock</div>
 </button>
         </div>
-
 <div class="sel-but-wr">
-{select == 1 ? (
-      <button class="sel-but btn-success">
-    ) : (
-      <button
-        onClick={() => setSelect(1)}
-        class="sel-but"
-      >                
-    )}  
+      <button 
+            {select == 1 ? (
+                class="sel-but btn-success"
+            ) : (
+                onClick={() => setSelect(1)}
+                class="sel-but"                
+            )} 
+        >  
 <svg width="248" height="248" viewBox="0 0 248 248" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M123 0H45.5L9 44.5V247.5H123H134H206L248 213.5V11.5L238.5 0H134H123Z" class="sel-but-1" fill="#148062"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M114 0H36.5L0 44.5V247.5H114H125H207L239 220.5V0H125H114Z" class="sel-but-2" fill="#00CD94"/>
@@ -116,16 +115,15 @@ const Choice = () => {
 <div class="sel-tt">Paper</div>
 </button>
 </div>
-
 <div class="sel-but-wr">
-{select == 2 ? (
-      <button class="sel-but btn-success">
-    ) : (
-      <button
-        onClick={() => setSelect(2)}
-        class="sel-but"
-      >                
-    )}  
+      <button 
+            {select == 2 ? (
+                class="sel-but btn-success"
+            ) : (
+                onClick={() => setSelect(2)}
+                class="sel-but"                
+            )} 
+        > 
 <svg width="248" height="248" viewBox="0 0 248 248" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M123 0H45.5L9 44.5V247.5H123H134H206L248 213.5V11.5L238.5 0H134H123Z" class="sel-but-1" fill="#148062"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M114 0H36.5L0 44.5V247.5H114H125H207L239 220.5V0H125H114Z" class="sel-but-2" fill="#00CD94"/>
@@ -144,7 +142,6 @@ const Choice = () => {
 <div class="sel-tt">Scissors</div>
 </button>
 </div>
-
       </div>
       <div className="d-flex my-4 justify-content-center bet-but-wr">
         {formattedBetAmounts.map((price) => (
