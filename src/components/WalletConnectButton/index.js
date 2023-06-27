@@ -84,9 +84,11 @@ const WalletConnectButton = () => {
           Disconnect
         </div>
       ) : (
-        <button className="btn btn-success" onClick={activateProvider}>
+        <div class="con-but-wr">
+        <button className="btn con-but" onClick={activateProvider}>
           Connect
         </button>
+        </div>
       )}
     </div>
   );

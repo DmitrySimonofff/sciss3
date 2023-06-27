@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <Link to="/" class="navbar-brand">
           <img className="logo-1" height="27px" src="ims/logo.svg" />
@@ -22,24 +22,37 @@ const Navbar = () => {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
-              <li class="nav-item">
-                <Link to="/" class="nav-link active" aria-current="page">
-                  Home
-                </Link>
-              </li>
-
-              <li class="nav-item">
-                <Link to="/cabinet" class="nav-link active" aria-current="page">
-                  Cabinet
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link to="/mint" class="nav-link active" aria-current="page">
-                  Mint
-                </Link>
-              </li>
-            </ul>
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="/">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="/cabinet">Cabinet</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="/mint">Mint</a>
+</li>
+<li class="nav-item ss-item">
+<a class="nav-link active" aria-current="page" href="/">
+<img src="ims/s_fb.svg" alt="fb" />
+</a>
+</li>
+<li class="nav-item ss-item">
+<a class="nav-link active" aria-current="page" href="/">
+<img src="ims/s_in.svg" alt="fb" />
+</a>
+</li>
+<li class="nav-item ss-item">
+<a class="nav-link active" aria-current="page" href="/">
+<img src="ims/s_tw.svg" alt="fb" />
+</a>
+</li>
+<li class="nav-item ss-item">
+<a class="nav-link active" aria-current="page" href="/">
+<img src="ims/s_inst.svg" alt="fb" />
+</a>
+</li>
+</ul>
             <div class="d-flex">
               <WalletConnectButton />
             </div>
