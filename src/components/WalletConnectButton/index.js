@@ -80,7 +80,7 @@ const WalletConnectButton = () => {
   return (
     <div>
       {account ? (
-        <div className="btn btn-danger" onClick={() => deactivate()}>
+        <div className="btn con-but" onClick={() => deactivate()}>
           Disconnect
         </div>
       ) : (

@@ -275,3 +275,7 @@ font-weight: 700;
 justify-content: start;
 padding-left: 20px;
 }
+div.con-but {
+    color: #a45112;
+    line-height: 47px;
+}
