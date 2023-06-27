@@ -272,7 +272,6 @@ color: rgba(92, 110, 145, 0.58);
 .tb-main tbody tr > td:nth-child(3) {
 color: #00CD94;
 font-weight: 700;
-justify-content: start;
 padding-left: 20px;
 }
 div.con-but {
