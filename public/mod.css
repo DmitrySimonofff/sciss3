@@ -222,9 +222,15 @@ background: url(ims/tb_2.svg) no-repeat 50% 22px #EBFFF8;
 .tb-main .th-3 {
 background: url(ims/tb_3.svg) no-repeat 50% 15px #EBFFF8;
 }
+.tb-main .th-31 {
+    background: url(ims/tb_31.svg) no-repeat 50% 15px #EBFFF8;
+    }
 .tb-main .th-4 {
-background: url(ims/tb_5.svg) no-repeat 50% 22px #EBFFF8;
+background: url(ims/tb_4.svg) no-repeat 50% 22px #EBFFF8;
 }
+.tb-main .th-5 {
+    background: url(ims/tb_5.svg) no-repeat 50% 22px #EBFFF8;
+    }
 .tb-main tbody tr {
 display: flex;
 justify-content: space-between;

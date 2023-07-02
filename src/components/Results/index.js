@@ -44,25 +44,29 @@ const Results = () => {
             <th scope="col" class="th-1">Poisition</th>
             <th scope="col" class="th-2">Address</th>
             <th scope="col" class="th-3">Bet</th>
-            <th scope="col" class="th-3">Result</th>
-            <th scope="col" class="th-4">Time</th>
+            <th scope="col" class="th-31">Result</th>
+            <th scope="col" class="th-4">Date</th>
+            <th scope="col" class="th-5">Time</th>
           </tr>
         </thead>
         <tbody>
           {results.map((result, i) => {
             return (
               <tr key={i}>
-                <th scope="row"><span>1{i + 1}</span></th>
+                <th scope="row"><span>{i < 9 ? "0" : null}{i + 1}</span></th>
                 <td>{shortenAddress(result._player)}</td>
                 <td>{ethers.utils.formatEther(result._amount)}</td>
                 <td>
-                  {result._result == 0 ? "Win" : null}
-                  {result._result == 1 ? "Loose" : null}
-                  {result._result == 2 ? "Tie" : null}
+                  {result._result == 0 ? '<span class="rz-0">Win</span>' : null}
+                  {result._result == 1 ? '<span class="rz-1">Loose</span>' : null}
+                  {result._result == 2 ? '<span class="rz-2">Tie</span>' : null}
                 </td>
 
                 <td>
-                  {moment.unix(result._time).format("DD - MM - YYYY HH:mm:ss")}
+                  {moment.unix(result._time).format("DD/MM/YYYY")}
+                </td>
+                <td>
+                  {moment.unix(result._time).format("HH:mm:ss")}
                 </td>
               </tr>
             );
