@@ -56,12 +56,11 @@ const Results = () => {
                 <th scope="row"><span>{i < 9 ? "0" : null}{i + 1}</span></th>
                 <td>{shortenAddress(result._player)}</td>
                 <td>{ethers.utils.formatEther(result._amount)}</td>
-                <td>
-                  <span className="rz-{(result._result)}"> 
-                    {result._result == 0 ? "Win" : null}
-                    {result._result == 1 ? "Loose" : null}
-                    {result._result == 2 ? "Tie" : null}
-                  </span>
+                <td> 
+                    {result._result == 0 ? (<span class="rz-0">Win</span>) : (null)}
+                    {result._result == 1 ? (<span class="rz-1">Loose</span>) : (null)}
+                    {result._result == 2 ? (<span class="rz-2">Tie</span>) : (null)}
+                  
                 </td>
 
                 <td>
