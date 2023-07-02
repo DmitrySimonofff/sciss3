@@ -288,13 +288,13 @@ div.con-but {
     font-size: 15px;
     font-family: 'avenir' !important;
 font-style: normal;
-font-weight: 700;
+font-weight: 900;
 letter-spacing: 0.3px; 
 text-transform: uppercase;
 }
 .tb-main tbody tr > td span.rz-0 {
     color: #24F2A7;
 }
-.tb-main tbody tr > td span.rz-2 {
+.tb-main tbody tr > td span.rz-1 {
     color: #FF1A1A;
 }
