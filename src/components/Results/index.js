@@ -51,7 +51,7 @@ const Results = () => {
         </thead>
         <tbody>
           {results.map((result, i) => {
-            {i < 9 :
+            if(i < 9) {
             return (
               <tr key={i}>
                 <th scope="row"><span>{i < 9 ? "0" : null}{i + 1}</span></th>
