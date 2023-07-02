@@ -52,6 +52,7 @@ const Results = () => {
         <tbody>
           {results.map((result, i) => {
             return (
+              {i < 10 ? (
               <tr key={i}>
                 <th scope="row"><span>{i < 9 ? "0" : null}{i + 1}</span></th>
                 <td>{shortenAddress(result._player)}</td>
@@ -70,6 +71,8 @@ const Results = () => {
                   {moment.unix(result._time).format("HH:mm:ss")}
                 </td>
               </tr>
+              ) : (null)
+              }
             );
           })}
         </tbody>
