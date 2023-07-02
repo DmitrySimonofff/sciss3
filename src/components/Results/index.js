@@ -57,9 +57,11 @@ const Results = () => {
                 <td>{shortenAddress(result._player)}</td>
                 <td>{ethers.utils.formatEther(result._amount)}</td>
                 <td>
-                  {result._result == 0 ? ("<span class='rz-0'>Win</span>") : null}
-                  {result._result == 1 ? ('<span class="rz-1">Loose</span>') : null}
-                  {result._result == 2 ? ('<span class="rz-2">Tie</span>') : null}
+                  <span class="rz-{result._result}"> 
+                    {result._result == 0 ? "Win" : null}
+                    {result._result == 1 ? "Loose" : null}
+                    {result._result == 2 ? "Tie" : null}
+                  </span>
                 </td>
 
                 <td>
