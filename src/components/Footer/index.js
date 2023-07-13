@@ -2,6 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
+<div>    
 <div class="ft-wr d-flex justify-content-center align-items-center">
 <div class="ft-inn">
 	<div class="ft-inn-1">
@@ -120,6 +121,7 @@ const Footer = () => {
 			</p>		
 		</div>	
 	</div>
+</div>
 </div>
 </div>
   );
