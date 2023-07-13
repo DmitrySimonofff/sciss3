@@ -122,24 +122,6 @@ const Footer = () => {
 	</div>
 </div>
 </div>
-<script>
-$(document).on('click', '.ft-inn-1 .ft-inn-1-1', function () {
-	var gogo = $(this).attr('data-go');
-	$('#root').addClass('pop-overr');
-	$(gogo).addClass('pop-go');
-});
-$(document).on('click', '.pop-close', function () {
-	$('.pop-tt-wr').removeClass('pop-go');
-	$('#root').removeClass('pop-overr');
-});
-$(document).on('click', '.pop-tt-inn', function (e) {
-	e.stopPropagation();
-});	
-$(document).on('click', '.pop-tt-wr', function () {
-	$('.pop-tt-wr').removeClass('pop-go');
-	$('#root').removeClass('pop-overr');
-});
-</script>
   );
 };
 
