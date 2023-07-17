@@ -14,8 +14,8 @@ body {
  background: url(ims/mbg.png), #FFFFFF; 
  font-family: 'sequel', sans-serif;
 }
-#root {
-  font-family: 'sequel', sans-serif !important;
+#root * {
+  font-family: 'sequel', sans-serif;
     font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.085em;
