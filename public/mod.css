@@ -25,6 +25,7 @@ z-index: 99;
 }
 #WEB3_CONNECT_MODAL_ID > div * {
     letter-spacing: normal;
+    font-family: 'avenir', sans-serif;
 }
 .navbar {
  text-transform: uppercase;
