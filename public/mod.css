@@ -416,10 +416,10 @@ text-transform: uppercase;
    pointer-events: none;
    transition: 400ms;
    }
-   #root > div:nth-child(1) {
+   #root > div > div:nth-child(1), #root > div > div:nth-child(2), #root .ft-wr, #root .ft-wr-2 {
    transition: 200ms; 
    }	
-   #root.pop-overr > div:nth-child(1) {
+   #root.pop-overr > div > div:nth-child(1), #root.pop-overr > div > div:nth-child(2), #root.pop-overr .ft-wr, #root.pop-overr .ft-wr-2 {
    filter: blur(5px);
    }
    .pop-tt-inn {
