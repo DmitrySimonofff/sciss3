@@ -6,6 +6,12 @@ const Footer = () => {
 		let popW = document.getElementById('root');
 		popT.classList.add('pop-go');
 		popW.classList.add('pop-overr');
+	};
+	const popClose = async (popId) => {
+		let popT = document.getElementById(popId);
+		let popW = document.getElementById('root');
+		popT.classList.remove('pop-go');
+		popW.classList.remove('pop-overr');
 	};	
   return (
 <div>    
@@ -13,8 +19,8 @@ const Footer = () => {
 <div class="ft-inn">
 	<div class="ft-inn-1">
 		<div class="ft-inn-1-1" data-go="pop_1" onClick={() => popUpp('pop_1')}>faq</div>	
-		<div class="ft-inn-1-1" data-go="pop_2">how to play</div>	
-		<div class="ft-inn-1-1" data-go="pop_3">flip responsibly</div>	
+		<div class="ft-inn-1-1" data-go="pop_2" onClick={() => popUpp('pop_2')}>how to play</div>	
+		<div class="ft-inn-1-1" data-go="pop_3" onClick={() => popUpp('pop_3')}>flip responsibly</div>	
 	</div>
 	<div class="ft-inn-2">
 		rockpaperscissors	
@@ -59,7 +65,7 @@ const Footer = () => {
 </div>
 <div class="pop-tt-wr"  id="pop_1">
 <div class="pop-tt-inn">
-	<div class="pop-close">
+	<div class="pop-close" onClick={() => popClose('pop_1')}>
 <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="22.8219" y1="0.347903" x2="1.24961" y2="22.6155" stroke="black"/>
 <line y1="-0.5" x2="31.0034" y2="-0.5" transform="matrix(0.695805 0.71823 0.71823 -0.695805 0.890503 0)" stroke="black"/>
@@ -83,7 +89,7 @@ const Footer = () => {
 </div>
 <div class="pop-tt-wr"  id="pop_2">
 <div class="pop-tt-inn">
-	<div class="pop-close">
+	<div class="pop-close"  onClick={() => popClose('pop_2')}>
 <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="22.8219" y1="0.347903" x2="1.24961" y2="22.6155" stroke="black"/>
 <line y1="-0.5" x2="31.0034" y2="-0.5" transform="matrix(0.695805 0.71823 0.71823 -0.695805 0.890503 0)" stroke="black"/>
@@ -103,7 +109,7 @@ const Footer = () => {
 </div>
 <div class="pop-tt-wr"  id="pop_3">
 <div class="pop-tt-inn">
-	<div class="pop-close">
+	<div class="pop-close"  onClick={() => popClose('pop_3')}>
 <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="22.8219" y1="0.347903" x2="1.24961" y2="22.6155" stroke="black"/>
 <line y1="-0.5" x2="31.0034" y2="-0.5" transform="matrix(0.695805 0.71823 0.71823 -0.695805 0.890503 0)" stroke="black"/>
