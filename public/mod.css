@@ -14,11 +14,14 @@ body {
  background: url(ims/mbg.png), #FFFFFF; 
  font-family: 'sequel', sans-serif;
 }
-* {
+#root {
   font-family: 'sequel', sans-serif !important;
     font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.085em;
+}
+#WEB3_CONNECT_MODAL_ID > div {
+z-index: 99;
 }
 .navbar {
  text-transform: uppercase;
