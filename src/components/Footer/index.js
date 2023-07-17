@@ -1,14 +1,20 @@
 import React from "react";
 
 const Footer = () => {
+	const popUpp = async (popId) => {
+		let popT = document.getElementById(popId);
+		let popW = document.getElementById('root');
+		popT.classList.add('pop-go');
+		popW.classList.add('pop-overr');
+	};	
   return (
 <div>    
 <div class="ft-wr d-flex justify-content-center align-items-center">
 <div class="ft-inn">
 	<div class="ft-inn-1">
-		<div class="ft-inn-1-1" data-go="#pop_1">faq</div>	
-		<div class="ft-inn-1-1" data-go="#pop_2">how to play</div>	
-		<div class="ft-inn-1-1" data-go="#pop_3">flip responsibly</div>	
+		<div class="ft-inn-1-1" data-go="pop_1" onClick={() => popUpp('pop_1')}>faq</div>	
+		<div class="ft-inn-1-1" data-go="pop_2">how to play</div>	
+		<div class="ft-inn-1-1" data-go="pop_3">flip responsibly</div>	
 	</div>
 	<div class="ft-inn-2">
 		rockpaperscissors	
